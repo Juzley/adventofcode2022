@@ -18,6 +18,6 @@ fn main() {
         }
     }
     elves.sort_by(|a, b| b.cmp(a));
-    println!("{:?}", elves);
+        
     println!("Part 1: {}, Part 2: {}", elves[0], elves[0] + elves[1] + elves[2]);
 }
