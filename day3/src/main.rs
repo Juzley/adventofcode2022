@@ -49,8 +49,6 @@ fn part2(lines: &Vec<Vec<char>>) -> u32 {
 }
 
 fn main() {
-    println!("Hello, world!");
-
     let file = File::open("input").unwrap();
     let reader = BufReader::new(file);
     let lines: Vec<Vec<char>> = reader
