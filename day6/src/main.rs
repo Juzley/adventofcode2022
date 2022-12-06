@@ -5,7 +5,7 @@ use std::collections::HashSet;
 fn find_marker(buf: &str, marker_size: usize) -> Option<usize> {
     let mut count = marker_size;
     for window in buf.as_bytes().windows(marker_size) {
-        let set: HashSet<u8> = window.iter().cloned().collect();
+        let set: HashSet<&u8> = window.iter().collect();
         if set.len() == marker_size {
             return Some(count);
         }
