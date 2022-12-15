@@ -89,8 +89,6 @@ fn part2(stacks: &mut Stacks, ops: &Vec<Move>) -> String {
 }
 
 fn main() {
-    env_logger::init();
-
     let file = File::open("input").unwrap();
     let reader = BufReader::new(file);
     let lines: Vec<String> = reader.lines().map(|l| l.unwrap()).collect();
